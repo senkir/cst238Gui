@@ -7,7 +7,7 @@
 //
 
 #import "OITMainMenuController.h"
-
+#import "OITLeftPanelView.h"
 
 @implementation OITMainMenuController
 
@@ -27,4 +27,14 @@
     [super dealloc];
 }
 
+#pragma mark -
+#pragma mark NSViewController
+
+- (void)loadView {
+    
+}
+
+- (void)checkboxButtonWasHit {
+    
+}
 @end

@@ -7,14 +7,21 @@
 //
 
 #import "GuiLab1AppDelegate.h"
+#import "OITLeftPanelView.h"
 
 @implementation GuiLab1AppDelegate
 
 @synthesize window;
+@synthesize menuWindow = _menuWindow;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+
+}
+
+- (void)viewDidLoad {
+    _menuWindow = [[OITLeftPanelView alloc] initWithFrame:self.window.frame];
+    [self.window addChildWindow:[self.menuWindow window] ordered:NSWindowAbove];
 }
 
 @end

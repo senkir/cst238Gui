@@ -13,5 +13,5 @@
 @private
     
 }
-
+- (void)checkboxButtonWasHit;
 @end

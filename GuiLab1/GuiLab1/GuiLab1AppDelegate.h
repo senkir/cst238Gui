@@ -8,11 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class OITLeftPanelView;
+
 @interface GuiLab1AppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
+    OITLeftPanelView *_menuWindow;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, retain) OITLeftPanelView *menuWindow;
 
 @end

@@ -23,6 +23,7 @@
 
 - (void)dealloc
 {
+    
     [super dealloc];
 }
 
@@ -31,4 +32,11 @@
     // Drawing code here.
 }
 
+- (void)menu:(NSMenu *)menu willHighlightItem:(NSMenuItem *)item {
+    NSLog(@"menu about to highlight an item");
+}
+
+- (void)menuWillOpen:(NSMenu *)menu {
+    NSLog(@"menu about to open");
+}
 @end

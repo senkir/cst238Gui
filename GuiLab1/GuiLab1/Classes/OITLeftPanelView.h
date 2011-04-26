@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface OITLeftPanelView : NSView {
+@interface OITLeftPanelView : NSView <NSMenuDelegate> {
 @private
     
 }
