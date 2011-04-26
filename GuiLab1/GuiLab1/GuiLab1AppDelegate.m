@@ -7,21 +7,24 @@
 //
 
 #import "GuiLab1AppDelegate.h"
-#import "OITLeftPanelView.h"
+#import "OITMainMenuController.h"
 
 @implementation GuiLab1AppDelegate
 
 @synthesize window;
-@synthesize menuWindow = _menuWindow;
+@synthesize openMenuButton = _openMenuButton;
+@synthesize instructionsLabel = _instructionsLabel;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-
+    OITMainMenuController* _controller = [[OITMainMenuController alloc] initWithNibName:@"OITMainMenuController" bundle:nil];
+    [self.instructionsLabel setTitleWithMnemonic:@"hit the button to start doing stuff"];
+    
 }
 
-- (void)viewDidLoad {
-    _menuWindow = [[OITLeftPanelView alloc] initWithFrame:self.window.frame];
-    [self.window addChildWindow:[self.menuWindow window] ordered:NSWindowAbove];
+- (IBAction) openMenuButtonWasSelected {
+    NSLog(@"opening the floating menu bar");
+    //open the floating menu bar
 }
 
 @end

@@ -39,4 +39,8 @@
 - (void)menuWillOpen:(NSMenu *)menu {
     NSLog(@"menu about to open");
 }
+
+- (void)viewWillDraw {
+    [super viewWillDraw];
+}
 @end

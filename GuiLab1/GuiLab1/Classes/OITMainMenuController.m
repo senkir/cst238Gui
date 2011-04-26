@@ -31,10 +31,8 @@
 #pragma mark NSViewController
 
 - (void)loadView {
+    [super loadView];
     
 }
 
-- (void)checkboxButtonWasHit {
-    
-}
 @end
