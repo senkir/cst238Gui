@@ -6,14 +6,13 @@
 //  Copyright 2011 SpiderMuffinArt. All rights reserved.
 //
 
-#import "OITMainMenuController.h"
+#import "OITMainWindowController.h"
 #import "OITLeftPanelView.h"
 
-@implementation OITMainMenuController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+@implementation OITMainWindowController
+- (id)initWithWindowNibName:(NSString *)windowNibName owner:(id)owner
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithWindowNibName:windowNibName owner:owner];
     if (self) {
         // Initialization code here.
         
@@ -30,9 +29,12 @@
 #pragma mark -
 #pragma mark NSViewController
 
-- (void)loadView {
-    [super loadView];
-    
+- (void)loadWindow {
+    [super loadWindow];
+}
+
+- (IBAction)buttonWasSelected:(id)sender {
+    NSLog(@"button was selected");
 }
 
 @end

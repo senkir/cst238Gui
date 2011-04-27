@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E34D714135D588300000564 /* OITLeftPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E34D713135D588300000564 /* OITLeftPanelView.m */; };
-		4E34D718135D58EE00000564 /* OITMainMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E34D717135D58EE00000564 /* OITMainMenuController.m */; };
-		4E4161ED13667FBD0002CF2F /* primaryWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E4161EC13667FBD0002CF2F /* primaryWindow.xib */; };
+		4E34D718135D58EE00000564 /* OITMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E34D717135D58EE00000564 /* OITMainWindowController.m */; };
 		4E8B6C391357DEE80029B89B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8B6C381357DEE80029B89B /* Cocoa.framework */; };
 		4E8B6C431357DEE80029B89B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B6C411357DEE80029B89B /* InfoPlist.strings */; };
 		4E8B6C461357DEE80029B89B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B6C451357DEE80029B89B /* main.m */; };
@@ -20,7 +19,7 @@
 		4E8B6C5E1357DEE90029B89B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B6C5C1357DEE90029B89B /* InfoPlist.strings */; };
 		4E8B6C611357DEE90029B89B /* GuiLab1Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B6C601357DEE90029B89B /* GuiLab1Tests.h */; };
 		4E8B6C631357DEE90029B89B /* GuiLab1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B6C621357DEE90029B89B /* GuiLab1Tests.m */; };
-		4E8B6C701357DFD90029B89B /* OITMainMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B6C6E1357DFD90029B89B /* OITMainMenuController.xib */; };
+		4E8B6C701357DFD90029B89B /* OITMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B6C6E1357DFD90029B89B /* OITMainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +35,8 @@
 /* Begin PBXFileReference section */
 		4E34D712135D588300000564 /* OITLeftPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OITLeftPanelView.h; path = Classes/OITLeftPanelView.h; sourceTree = "<group>"; };
 		4E34D713135D588300000564 /* OITLeftPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OITLeftPanelView.m; path = Classes/OITLeftPanelView.m; sourceTree = "<group>"; };
-		4E34D716135D58EE00000564 /* OITMainMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OITMainMenuController.h; path = Classes/OITMainMenuController.h; sourceTree = "<group>"; };
-		4E34D717135D58EE00000564 /* OITMainMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OITMainMenuController.m; path = Classes/OITMainMenuController.m; sourceTree = "<group>"; };
-		4E4161EC13667FBD0002CF2F /* primaryWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = primaryWindow.xib; sourceTree = "<group>"; };
+		4E34D716135D58EE00000564 /* OITMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OITMainWindowController.h; path = Classes/OITMainWindowController.h; sourceTree = "<group>"; };
+		4E34D717135D58EE00000564 /* OITMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OITMainWindowController.m; path = Classes/OITMainWindowController.m; sourceTree = "<group>"; };
 		4E8B6C341357DEE80029B89B /* GuiLab1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiLab1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8B6C381357DEE80029B89B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4E8B6C3B1357DEE80029B89B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -58,7 +56,7 @@
 		4E8B6C5F1357DEE90029B89B /* GuiLab1Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuiLab1Tests-Prefix.pch"; sourceTree = "<group>"; };
 		4E8B6C601357DEE90029B89B /* GuiLab1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuiLab1Tests.h; sourceTree = "<group>"; };
 		4E8B6C621357DEE90029B89B /* GuiLab1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuiLab1Tests.m; sourceTree = "<group>"; };
-		4E8B6C6E1357DFD90029B89B /* OITMainMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OITMainMenuController.xib; sourceTree = "<group>"; };
+		4E8B6C6E1357DFD90029B89B /* OITMainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OITMainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +82,8 @@
 		4E34D719135D590300000564 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4E34D716135D58EE00000564 /* OITMainMenuController.h */,
-				4E34D717135D58EE00000564 /* OITMainMenuController.m */,
+				4E34D716135D58EE00000564 /* OITMainWindowController.h */,
+				4E34D717135D58EE00000564 /* OITMainWindowController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -95,8 +93,7 @@
 			children = (
 				4E34D712135D588300000564 /* OITLeftPanelView.h */,
 				4E34D713135D588300000564 /* OITLeftPanelView.m */,
-				4E8B6C6E1357DFD90029B89B /* OITMainMenuController.xib */,
-				4E4161EC13667FBD0002CF2F /* primaryWindow.xib */,
+				4E8B6C6E1357DFD90029B89B /* OITMainMenu.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -257,8 +254,7 @@
 				4E8B6C431357DEE80029B89B /* InfoPlist.strings in Resources */,
 				4E8B6C491357DEE80029B89B /* Credits.rtf in Resources */,
 				4E8B6C4F1357DEE80029B89B /* MainMenu.xib in Resources */,
-				4E8B6C701357DFD90029B89B /* OITMainMenuController.xib in Resources */,
-				4E4161ED13667FBD0002CF2F /* primaryWindow.xib in Resources */,
+				4E8B6C701357DFD90029B89B /* OITMainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +293,7 @@
 				4E8B6C461357DEE80029B89B /* main.m in Sources */,
 				4E8B6C4C1357DEE80029B89B /* GuiLab1AppDelegate.m in Sources */,
 				4E34D714135D588300000564 /* OITLeftPanelView.m in Sources */,
-				4E34D718135D58EE00000564 /* OITMainMenuController.m in Sources */,
+				4E34D718135D58EE00000564 /* OITMainWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

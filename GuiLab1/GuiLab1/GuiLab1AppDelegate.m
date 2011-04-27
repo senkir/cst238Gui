@@ -7,7 +7,7 @@
 //
 
 #import "GuiLab1AppDelegate.h"
-#import "OITMainMenuController.h"
+#import "OITMainWindowController.h"
 
 @implementation GuiLab1AppDelegate
 
@@ -17,9 +17,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    OITMainMenuController* _controller = [[OITMainMenuController alloc] initWithNibName:@"OITMainMenuController" bundle:nil];
-    [self.instructionsLabel setTitleWithMnemonic:@"hit the button to start doing stuff"];
+    OITMainWindowController* _controller = [[OITMainWindowController alloc] initWithWindowNibName:@"OITMainMenuController" owner:self];
     
+    [self.instructionsLabel setTitleWithMnemonic:@"hit the button to start doing stuff"];
+    [_controller showWindow:self];
 }
 
 - (IBAction) openMenuButtonWasSelected {

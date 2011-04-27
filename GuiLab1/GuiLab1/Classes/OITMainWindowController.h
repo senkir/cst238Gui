@@ -9,9 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface OITMainMenuController : NSViewController {
+@interface OITMainWindowController : NSWindowController {
+    IBOutlet NSButton* _openButton;
 @private
     
 }
-- (void)checkboxButtonWasHit;
+
+- (IBAction)buttonWasSelected:(id)sender;
 @end
