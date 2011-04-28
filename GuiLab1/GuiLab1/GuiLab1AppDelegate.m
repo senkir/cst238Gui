@@ -12,20 +12,14 @@
 @implementation GuiLab1AppDelegate
 
 @synthesize window;
-@synthesize openMenuButton = _openMenuButton;
-@synthesize instructionsLabel = _instructionsLabel;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    OITMainWindowController* _controller = [[OITMainWindowController alloc] initWithWindowNibName:@"OITMainMenuController" owner:self];
     
-    [self.instructionsLabel setTitleWithMnemonic:@"hit the button to start doing stuff"];
-    [_controller showWindow:self];
-}
-
-- (IBAction) openMenuButtonWasSelected {
-    NSLog(@"opening the floating menu bar");
-    //open the floating menu bar
+    //pass control to the Main Window Controller
+    OITMainWindowController* controller = [[OITMainWindowController alloc] initWithWindowNibName:@"OITMainMenu" owner:self];
+    
+    [controller showWindow:self];
 }
 
 @end

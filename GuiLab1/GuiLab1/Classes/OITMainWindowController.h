@@ -10,7 +10,8 @@
 
 
 @interface OITMainWindowController : NSWindowController {
-    IBOutlet NSButton* _openButton;
+    IBOutlet NSMenu* _menu;
+    IBOutlet NSWindow* _mainWindow;
 @private
     
 }

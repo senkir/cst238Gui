@@ -8,19 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class OITLeftPanelView;
+@class OITWidgetMenu;
 
 @interface GuiLab1AppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
-    IBOutlet NSButton *_openMenuButton;
-    IBOutlet NSTextField *_instructionsLabel;
+    
 }
 
 @property (assign) IBOutlet NSWindow *window;
-@property (nonatomic, retain) IBOutlet NSButton *openMenuButton;
-@property (nonatomic, retain) IBOutlet NSTextField *instructionsLabel;
-
-- (IBAction) openMenuButtonWasSelected;
 
 @end
