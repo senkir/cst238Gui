@@ -11,7 +11,9 @@
 
 @interface OITNavigationViewController : NSViewController {
 @private
-    
+    id _delegate;
 }
+@property (nonatomic, retain) id delegate;
 
+- (IBAction)buttonWasPressed:(id)sender;
 @end

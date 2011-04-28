@@ -13,15 +13,14 @@
 @implementation Lab1RehashAppDelegate
 
 @synthesize window;
+@synthesize primaryController = _primaryController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
     NSLog(@"initialize!");
-    OITNavigationViewController* controller = [[OITNavigationViewController alloc] initWithNibName:@"navigationView" bundle:nil];
-    NSViewController* defaultView = [[NSViewController alloc] initWithNibName:@"OITEmptyView" bundle:nil];
-    NSArray* views = [NSArray arrayWithObjects:[controller view], [defaultView view], nil];
-    [splitView setSubviews:views];
+    _primaryController = [[OITMainWindowController alloc] initWithWindow:window andSplitView:_splitView];
+//    [_primaryController window];
 }
 
 @end

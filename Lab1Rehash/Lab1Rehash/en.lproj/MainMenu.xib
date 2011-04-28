@@ -1342,6 +1342,7 @@
 									<string key="NSFrameSize">{221, 320}</string>
 									<reference key="NSSuperview" ref="194229379"/>
 									<reference key="NSWindow"/>
+									<reference key="NSNextKeyView" ref="1068788630"/>
 									<string key="NSClassName">NSView</string>
 								</object>
 								<object class="NSCustomView" id="1068788630">
@@ -1350,12 +1351,14 @@
 									<string key="NSFrame">{{231, 0}, {209, 320}}</string>
 									<reference key="NSSuperview" ref="194229379"/>
 									<reference key="NSWindow"/>
+									<reference key="NSNextKeyView"/>
 									<string key="NSClassName">NSView</string>
 								</object>
 							</object>
 							<string key="NSFrame">{{20, 20}, {440, 320}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="772479063"/>
 							<bool key="NSIsVertical">YES</bool>
 							<int key="NSDividerStyle">3</int>
 						</object>
@@ -1363,6 +1366,7 @@
 					<string key="NSFrame">{{7, 11}, {480, 360}}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
+					<reference key="NSNextKeyView" ref="194229379"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMaxSize">{1e+13, 1e+13}</string>
@@ -2059,11 +2063,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">splitView</string>
+						<string key="label">_splitView</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="194229379"/>
 					</object>
-					<int key="connectionID">538</int>
+					<int key="connectionID">542</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3665,7 +3669,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">538</int>
+			<int key="maxID">542</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3677,7 +3681,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>splitView</string>
+							<string>_splitView</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -3690,13 +3694,13 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>splitView</string>
+							<string>_splitView</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
-								<string key="name">splitView</string>
+								<string key="name">_splitView</string>
 								<string key="candidateClassName">NSSplitView</string>
 							</object>
 							<object class="IBToOneOutletInfo">

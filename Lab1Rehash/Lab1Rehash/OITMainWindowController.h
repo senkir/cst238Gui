@@ -13,9 +13,10 @@
  */
 @interface OITMainWindowController : NSWindowController {
 @private
-    NSView   *_leftView;
-    NSView   *_rightView;
+    NSSplitView* _splitView;
 }
-@property (nonatomic, retain) NSView* leftView;
-@property (nonatomic, retain) NSView* rightView;
+@property (nonatomic, retain) NSSplitView *splitView;
+
+
+- (id)initWithWindow:(NSWindow *)window andSplitView:(NSSplitView*)splitView;
 @end

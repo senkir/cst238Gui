@@ -11,13 +11,14 @@
 
 @implementation OITNavigationViewController
 
+@synthesize delegate = _delegate;
+
 - (id)init
 {
     self = [super init];
     if (self) {
         // Initialization code here.
         NSLog(@"setting up outline view controller");
-        [self setDataSource:[[OITMenuOptionsDataSource alloc] init]];
     }
     
     return self;
@@ -28,4 +29,8 @@
     [super dealloc];
 }
 
+- (IBAction)buttonWasPressed:(id)sender {
+    //do stuff with the button action
+    NSLog(@"button %ld was pressed", [(NSButton*)sender tag]);
+}
 @end

@@ -11,9 +11,10 @@
 @interface Lab1RehashAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
-    IBOutlet NSSplitView *splitView;
+    NSViewController* _primaryController;
+    IBOutlet NSSplitView*    _splitView;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (nonatomic, retain) NSViewController *primaryController;
 @end
