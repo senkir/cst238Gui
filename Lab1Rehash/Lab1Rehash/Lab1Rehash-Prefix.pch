@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Lab1Rehash' target in the 'Lab1Rehash' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

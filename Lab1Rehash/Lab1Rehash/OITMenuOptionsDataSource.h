@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
-@interface OITMenuOptionsModel : NSObject {
+@interface OITMenuOptionsDataSource : NSObject <NSOutlineViewDataSource> {
 @private
     NSMutableArray* _items;
 }
