@@ -11,6 +11,8 @@
 @interface Lab1RehashAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
+    IBOutlet NSView   *leftView;
+    IBOutlet NSView   *rightView;
 }
 
 @property (assign) IBOutlet NSWindow *window;

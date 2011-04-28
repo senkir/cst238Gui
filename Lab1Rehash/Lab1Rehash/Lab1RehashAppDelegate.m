@@ -8,6 +8,7 @@
 
 #import "Lab1RehashAppDelegate.h"
 #import "OITMainWindowController.h"
+
 @implementation Lab1RehashAppDelegate
 
 @synthesize window;

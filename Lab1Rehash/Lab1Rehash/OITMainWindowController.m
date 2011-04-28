@@ -11,6 +11,9 @@
 
 @implementation OITMainWindowController
 
+@synthesize leftView = _leftView;
+@synthesize rightView = _rightView;
+
 - (id)initWithWindow:(NSWindow *)window
 {
     self = [super initWithWindow:window];
