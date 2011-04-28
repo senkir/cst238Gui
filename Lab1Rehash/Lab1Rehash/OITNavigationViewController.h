@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol OITNavigationViewControllerDelegate <NSObject>
+- (void)buttonWasPressed:(NSButton*)button;
+@end 
 
 @interface OITNavigationViewController : NSViewController {
 @private

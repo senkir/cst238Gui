@@ -7,7 +7,7 @@
 //
 
 #import "OITMainWindowController.h"
-#import "OITNavigationViewController.h"
+#import "OITWidgetViewController.h"
 
 @implementation OITMainWindowController
 
@@ -19,10 +19,11 @@
     self = [self initWithWindow:window];
     if (self) {
         self.splitView = splitView;
-        OITNavigationViewController* navController = [[OITNavigationViewController alloc] 
+        _leftController = [[OITNavigationViewController alloc] 
                                                       initWithNibName:@"navigationView" bundle:nil];
-        NSViewController* defaultView = [[NSViewController alloc] initWithNibName:@"OITEmptyView" bundle:nil];
-        NSArray* views = [NSArray arrayWithObjects:[navController view], [defaultView view], nil];
+        [(OITNavigationViewController*)_leftController setDelegate:self];
+        _rightController = [[NSViewController alloc] initWithNibName:@"OITEmptyView" bundle:nil];
+        NSArray* views = [NSArray arrayWithObjects:[_leftController view], [_rightController view], nil];
         [_splitView setSubviews:views];
     }
     return self;
@@ -40,7 +41,8 @@
 }
 
 - (void)dealloc {
-    
+    [_leftController release];
+    [_rightController release];
     [super dealloc];
 }
 
@@ -59,4 +61,10 @@
 #pragma mark -
 #pragma mark OITMainWindowController
 
+
+#pragma mark -
+#pragma mark OITNavigationViewControllerDelegate
+- (void)buttonWasPressed:(NSButton *)button {
+    //do stuff with the button
+}
 @end

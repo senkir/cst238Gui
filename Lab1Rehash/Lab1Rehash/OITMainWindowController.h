@@ -7,13 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "OITNavigationViewController.h"
+#import "MasterConstants.h"
 /**
  This window is built with split controllers on the inside
  */
-@interface OITMainWindowController : NSWindowController {
+@interface OITMainWindowController : NSWindowController <OITNavigationViewControllerDelegate> {
 @private
     NSSplitView* _splitView;
+    NSViewController* _leftController;
+    NSViewController* _rightController;
 }
 @property (nonatomic, retain) NSSplitView *splitView;
 

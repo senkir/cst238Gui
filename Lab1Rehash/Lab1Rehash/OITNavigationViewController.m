@@ -7,7 +7,6 @@
 //
 
 #import "OITNavigationViewController.h"
-#import "OITMenuOptionsDataSource.h"
 
 @implementation OITNavigationViewController
 
@@ -32,5 +31,6 @@
 - (IBAction)buttonWasPressed:(id)sender {
     //do stuff with the button action
     NSLog(@"button %ld was pressed", [(NSButton*)sender tag]);
+    [_delegate buttonWasPressed:(NSButton*)sender];
 }
 @end
