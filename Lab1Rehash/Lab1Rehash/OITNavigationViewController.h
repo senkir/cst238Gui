@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface OITOutlineViewController : NSOutlineView {
+@interface OITNavigationViewController : NSViewController {
 @private
     
 }

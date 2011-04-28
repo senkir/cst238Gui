@@ -6,10 +6,10 @@
 //  Copyright 2011 SpiderMuffinArt. All rights reserved.
 //
 
-#import "OITOutlineViewController.h"
+#import "OITNavigationViewController.h"
 #import "OITMenuOptionsDataSource.h"
 
-@implementation OITOutlineViewController
+@implementation OITNavigationViewController
 
 - (id)init
 {

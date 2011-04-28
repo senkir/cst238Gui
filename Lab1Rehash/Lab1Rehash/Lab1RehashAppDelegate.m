@@ -8,6 +8,7 @@
 
 #import "Lab1RehashAppDelegate.h"
 #import "OITMainWindowController.h"
+#import "OITNavigationViewController.h"
 
 @implementation Lab1RehashAppDelegate
 
@@ -17,9 +18,10 @@
 {
     // Insert code here to initialize your application
     NSLog(@"initialize!");
-    OITMainWindowController* controller = [[OITMainWindowController alloc] initWithWindow:window];
-    [controller loadWindow];
-    [controller windowDidLoad];
+    OITNavigationViewController* controller = [[OITNavigationViewController alloc] initWithNibName:@"navigationView" bundle:nil];
+    NSViewController* defaultView = [[NSViewController alloc] initWithNibName:@"OITEmptyView" bundle:nil];
+    NSArray* views = [NSArray arrayWithObjects:[controller view], [defaultView view], nil];
+    [splitView setSubviews:views];
 }
 
 @end

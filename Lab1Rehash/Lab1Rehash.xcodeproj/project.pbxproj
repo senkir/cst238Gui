@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E15763B1369F8DF0057196E /* navigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E15763A1369F8DF0057196E /* navigationView.xib */; };
+		4E15763D136A00990057196E /* OITEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E15763C136A00990057196E /* OITEmptyView.xib */; };
 		4E892AE1136949300021CDF4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E892AE0136949300021CDF4 /* Cocoa.framework */; };
 		4E892AEB136949300021CDF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E892AE9136949300021CDF4 /* InfoPlist.strings */; };
 		4E892AEE136949310021CDF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892AED136949310021CDF4 /* main.m */; };
@@ -14,13 +16,14 @@
 		4E892AF4136949310021CDF4 /* Lab1RehashAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892AF3136949310021CDF4 /* Lab1RehashAppDelegate.m */; };
 		4E892AF7136949310021CDF4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E892AF5136949310021CDF4 /* MainMenu.xib */; };
 		4E892B0713694B560021CDF4 /* OITMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0613694B560021CDF4 /* OITMainWindowController.m */; };
-		4E892B1113694CA10021CDF4 /* OITWidgetOptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0913694CA10021CDF4 /* OITWidgetOptionController.m */; };
 		4E892B1213694CA10021CDF4 /* OITMenuOptionsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0A13694CA10021CDF4 /* OITMenuOptionsDataSource.m */; };
 		4E892B1313694CA10021CDF4 /* OITOutlineViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0D13694CA10021CDF4 /* OITOutlineViewItem.m */; };
-		4E892B1413694CA10021CDF4 /* OITOutlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0F13694CA10021CDF4 /* OITOutlineViewController.m */; };
+		4E892B1413694CA10021CDF4 /* OITNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0F13694CA10021CDF4 /* OITNavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E15763A1369F8DF0057196E /* navigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = navigationView.xib; sourceTree = "<group>"; };
+		4E15763C136A00990057196E /* OITEmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OITEmptyView.xib; sourceTree = "<group>"; };
 		4E892ADC136949300021CDF4 /* Lab1Rehash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab1Rehash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E892AE0136949300021CDF4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4E892AE3136949300021CDF4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -36,14 +39,12 @@
 		4E892AF6136949310021CDF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4E892B0513694B560021CDF4 /* OITMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITMainWindowController.h; sourceTree = "<group>"; };
 		4E892B0613694B560021CDF4 /* OITMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITMainWindowController.m; sourceTree = "<group>"; };
-		4E892B0913694CA10021CDF4 /* OITWidgetOptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITWidgetOptionController.m; sourceTree = "<group>"; };
 		4E892B0A13694CA10021CDF4 /* OITMenuOptionsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITMenuOptionsDataSource.m; sourceTree = "<group>"; };
 		4E892B0B13694CA10021CDF4 /* OITMenuOptionsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITMenuOptionsDataSource.h; sourceTree = "<group>"; };
-		4E892B0C13694CA10021CDF4 /* OITWidgetOptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITWidgetOptionController.h; sourceTree = "<group>"; };
 		4E892B0D13694CA10021CDF4 /* OITOutlineViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITOutlineViewItem.m; sourceTree = "<group>"; };
 		4E892B0E13694CA10021CDF4 /* OITOutlineViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITOutlineViewItem.h; sourceTree = "<group>"; };
-		4E892B0F13694CA10021CDF4 /* OITOutlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITOutlineViewController.m; sourceTree = "<group>"; };
-		4E892B1013694CA10021CDF4 /* OITOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITOutlineViewController.h; sourceTree = "<group>"; };
+		4E892B0F13694CA10021CDF4 /* OITNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITNavigationViewController.m; sourceTree = "<group>"; };
+		4E892B1013694CA10021CDF4 /* OITNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITNavigationViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E1576361369F7C40057196E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E892B0513694B560021CDF4 /* OITMainWindowController.h */,
+				4E892B0613694B560021CDF4 /* OITMainWindowController.m */,
+				4E892B1013694CA10021CDF4 /* OITNavigationViewController.h */,
+				4E892B0F13694CA10021CDF4 /* OITNavigationViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4E1576381369F7D60057196E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E892B0A13694CA10021CDF4 /* OITMenuOptionsDataSource.m */,
+				4E892B0B13694CA10021CDF4 /* OITMenuOptionsDataSource.h */,
+				4E892B0D13694CA10021CDF4 /* OITOutlineViewItem.m */,
+				4E892B0E13694CA10021CDF4 /* OITOutlineViewItem.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4E1576391369F7E40057196E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E892AF5136949310021CDF4 /* MainMenu.xib */,
+				4E15763A1369F8DF0057196E /* navigationView.xib */,
+				4E15763C136A00990057196E /* OITEmptyView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		4E892AD1136949300021CDF4 = {
 			isa = PBXGroup;
 			children = (
@@ -99,17 +132,9 @@
 			children = (
 				4E892AF2136949310021CDF4 /* Lab1RehashAppDelegate.h */,
 				4E892AF3136949310021CDF4 /* Lab1RehashAppDelegate.m */,
-				4E892B0513694B560021CDF4 /* OITMainWindowController.h */,
-				4E892B0613694B560021CDF4 /* OITMainWindowController.m */,
-				4E892B0913694CA10021CDF4 /* OITWidgetOptionController.m */,
-				4E892B0A13694CA10021CDF4 /* OITMenuOptionsDataSource.m */,
-				4E892B0B13694CA10021CDF4 /* OITMenuOptionsDataSource.h */,
-				4E892B0C13694CA10021CDF4 /* OITWidgetOptionController.h */,
-				4E892B0D13694CA10021CDF4 /* OITOutlineViewItem.m */,
-				4E892B0E13694CA10021CDF4 /* OITOutlineViewItem.h */,
-				4E892B0F13694CA10021CDF4 /* OITOutlineViewController.m */,
-				4E892B1013694CA10021CDF4 /* OITOutlineViewController.h */,
-				4E892AF5136949310021CDF4 /* MainMenu.xib */,
+				4E1576361369F7C40057196E /* Controller */,
+				4E1576381369F7D60057196E /* Model */,
+				4E1576391369F7E40057196E /* View */,
 				4E892AE7136949300021CDF4 /* Supporting Files */,
 			);
 			path = Lab1Rehash;
@@ -180,6 +205,8 @@
 				4E892AEB136949300021CDF4 /* InfoPlist.strings in Resources */,
 				4E892AF1136949310021CDF4 /* Credits.rtf in Resources */,
 				4E892AF7136949310021CDF4 /* MainMenu.xib in Resources */,
+				4E15763B1369F8DF0057196E /* navigationView.xib in Resources */,
+				4E15763D136A00990057196E /* OITEmptyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,10 +220,9 @@
 				4E892AEE136949310021CDF4 /* main.m in Sources */,
 				4E892AF4136949310021CDF4 /* Lab1RehashAppDelegate.m in Sources */,
 				4E892B0713694B560021CDF4 /* OITMainWindowController.m in Sources */,
-				4E892B1113694CA10021CDF4 /* OITWidgetOptionController.m in Sources */,
 				4E892B1213694CA10021CDF4 /* OITMenuOptionsDataSource.m in Sources */,
 				4E892B1313694CA10021CDF4 /* OITOutlineViewItem.m in Sources */,
-				4E892B1413694CA10021CDF4 /* OITOutlineViewController.m in Sources */,
+				4E892B1413694CA10021CDF4 /* OITNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
