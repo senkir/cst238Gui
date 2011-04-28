@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "OITNavigationViewController.h"
-#import "MasterConstants.h"
+
 /**
  This window is built with split controllers on the inside
  */
@@ -22,4 +22,5 @@
 
 
 - (id)initWithWindow:(NSWindow *)window andSplitView:(NSSplitView*)splitView;
+
 @end

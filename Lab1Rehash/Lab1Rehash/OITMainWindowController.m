@@ -9,6 +9,15 @@
 #import "OITMainWindowController.h"
 #import "OITWidgetViewController.h"
 
+#import "MasterConstants.h"
+
+@interface OITMainWindowController (Private)
+
+- (NSViewController*)controllerForButton:(NSButton*)button;
+
+@end
+
+
 @implementation OITMainWindowController
 
 @synthesize splitView = _splitView;
@@ -60,11 +69,30 @@
 
 #pragma mark -
 #pragma mark OITMainWindowController
-
+- (NSViewController*)controllerForButton:(NSButton *)button {
+    NSInteger tag = [button tag];
+    NSViewController* toReturn = nil;
+    switch (tag) {
+        case kWidgetButtonTag:
+            toReturn = [[OITWidgetViewController alloc] initWithNibName:@"OITWidgetViewController" bundle:nil];
+            NSLog(@"MainWindow: matched WidgetViewController to button");
+            break;
+            
+        default:
+            NSLog(@"tag does not relate to any known button");
+            break;
+    }
+    return toReturn;
+}
 
 #pragma mark -
 #pragma mark OITNavigationViewControllerDelegate
 - (void)buttonWasPressed:(NSButton *)button {
-    //do stuff with the button
+    NSLog(@"MainWindow: deciding what to do with the button");
+    NSViewController* controller = [self controllerForButton:button];
+    if (controller) {
+        [_splitView replaceSubview:[_rightController view] with:[controller view]];
+        _rightController = controller;
+    }
 }
 @end
