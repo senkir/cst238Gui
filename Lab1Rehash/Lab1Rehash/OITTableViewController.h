@@ -1,5 +1,5 @@
 //
-//  OITWidgetViewController.h
+//  OITTableViewController.h
 //  Lab1Rehash
 //
 //  Created by Travis Churchill on 4/28/11.
@@ -8,10 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-/**
- Various butten widgets and a date picker are included here
- */
-@interface OITWidgetViewController : NSViewController {
+
+@interface OITTableViewController : NSViewController {
 @private
     
 }

@@ -1,5 +1,5 @@
 //
-//  OITWidgetViewController.h
+//  OITListViewController.h
 //  Lab1Rehash
 //
 //  Created by Travis Churchill on 4/28/11.
@@ -9,9 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 /**
- Various butten widgets and a date picker are included here
+ Including List Box, Suggestion Box, Tree, Menu, Stack Panel
  */
-@interface OITWidgetViewController : NSViewController {
+@interface OITListViewController : NSViewController {
 @private
     
 }

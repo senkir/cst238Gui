@@ -50,7 +50,7 @@
 						<string key="NSFrame">{{2, 82}, {133, 38}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<int key="NSViewLayerContentsRedrawPolicy">2</int>
 						<int key="NSTag">55</int>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="514401178">
@@ -78,6 +78,7 @@
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="497629231"/>
+						<int key="NSViewLayerContentsRedrawPolicy">2</int>
 						<int key="NSTag">54</int>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="664322501">
@@ -101,6 +102,7 @@
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="13413967"/>
+						<int key="NSViewLayerContentsRedrawPolicy">2</int>
 						<int key="NSTag">53</int>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="727927228">
@@ -124,6 +126,7 @@
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="130669183"/>
+						<int key="NSViewLayerContentsRedrawPolicy">2</int>
 						<int key="NSTag">52</int>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="536048259">
@@ -147,6 +150,7 @@
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="61547344"/>
+						<int key="NSViewLayerContentsRedrawPolicy">2</int>
 						<int key="NSTag">51</int>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="336674657">
@@ -170,6 +174,7 @@
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="533158641"/>
+						<int key="NSViewLayerContentsRedrawPolicy">2</int>
 						<int key="NSTag">50</int>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="487624994">
@@ -191,6 +196,8 @@
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="143235009"/>
+				<bool key="NSViewIsLayerTreeHost">YES</bool>
+				<int key="NSViewLayerContentsRedrawPolicy">2</int>
 				<string key="NSClassName">NSView</string>
 			</object>
 		</object>

@@ -12,8 +12,8 @@
 
 @synthesize delegate = _delegate;
 
-- (id)init
-{
+#pragma mark NSView
+- (id)init {
     self = [super init];
     if (self) {
         // Initialization code here.
@@ -23,10 +23,12 @@
     return self;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [super dealloc];
 }
+
+#pragma mark -
+#pragma mark OITNavigationViewController
 
 - (IBAction)buttonWasPressed:(id)sender {
     //do stuff with the button action

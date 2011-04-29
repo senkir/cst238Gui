@@ -7,7 +7,14 @@
 //
 
 #import "OITMainWindowController.h"
+
+//View Controllers
 #import "OITWidgetViewController.h"
+#import "OITListViewController.h"
+#import "OITTextViewController.h"
+#import "OITPopupViewController.h"
+#import "OITTableViewController.h"
+#import "OITPanelViewController.h"
 
 #import "MasterConstants.h"
 
@@ -83,18 +90,23 @@
             break;
         case kButtonTextTag:
             NSLog(@"%@ %@ button", logString, @"Text");
+            toReturn = [[OITTextViewController alloc] initWithNibName:@"OITTextViewController" bundle:nil];
             break;
         case kButtonPopupsTag:
             NSLog(@"%@ %@ button", logString, @"Popups");
+            toReturn = [[OITPopupViewController alloc] initWithNibName:@"OITPopupViewController" bundle:nil];
             break;
         case kButtonTablesTag:
             NSLog(@"%@ %@ button", logString, @"Tables");
+            toReturn = [[OITTableViewController alloc] initWithNibName:@"OITTableViewController" bundle:nil];
             break;
         case kButtonPanelsTag:
             NSLog(@"%@ %@ button", logString, @"Panels");
+            toReturn = [[OITPanelViewController alloc] initWithNibName:@"OITPanelViewController" bundle:nil];
             break;
         case kButtonListsTag:
             NSLog(@"%@ %@ button", logString, @"Lists");
+            toReturn = [[OITListViewController alloc] initWithNibName:@"OITListViewController" bundle:nil];
             break;
         default:
             
