@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-#define kWidgetButtonTag    50
-#define kListsButtonTag     51
-#define kTextButtonTag      52
-#define kPopupsButtonTag    53
-#define kPanelsButtonTag    54
-#define kTablesButtonTag    55
+#define kButtonWidgetTag    50
+#define kButtonListsTag     51
+#define kButtonTextTag      52
+#define kButtonPopupsTag    53
+#define kButtonPanelsTag    54
+#define kButtonTablesTag    55
 
 @interface MasterConstants : NSObject {
 @private

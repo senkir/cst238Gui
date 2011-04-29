@@ -69,16 +69,35 @@
 
 #pragma mark -
 #pragma mark OITMainWindowController
+/**
+ returns a controller based on the button which has been selected.
+ */
 - (NSViewController*)controllerForButton:(NSButton *)button {
     NSInteger tag = [button tag];
     NSViewController* toReturn = nil;
+    NSString* logString = [NSString stringWithString:@"MainWindow: matched WidgetViewController to"];
     switch (tag) {
-        case kWidgetButtonTag:
+        case kButtonWidgetTag:
             toReturn = [[OITWidgetViewController alloc] initWithNibName:@"OITWidgetViewController" bundle:nil];
-            NSLog(@"MainWindow: matched WidgetViewController to button");
+            NSLog(@"%@ %@ button", logString, @"Widget");
             break;
-            
+        case kButtonTextTag:
+            NSLog(@"%@ %@ button", logString, @"Text");
+            break;
+        case kButtonPopupsTag:
+            NSLog(@"%@ %@ button", logString, @"Popups");
+            break;
+        case kButtonTablesTag:
+            NSLog(@"%@ %@ button", logString, @"Tables");
+            break;
+        case kButtonPanelsTag:
+            NSLog(@"%@ %@ button", logString, @"Panels");
+            break;
+        case kButtonListsTag:
+            NSLog(@"%@ %@ button", logString, @"Lists");
+            break;
         default:
+            
             NSLog(@"tag does not relate to any known button");
             break;
     }
