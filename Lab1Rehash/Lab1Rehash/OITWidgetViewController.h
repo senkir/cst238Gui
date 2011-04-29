@@ -15,12 +15,18 @@
 @private
     IBOutlet NSButton* _button;
     IBOutlet NSMatrix* _matrixButtons;
-    IBOutlet NSButton* _buttonOption1;
-    IBOutlet NSButton* _buttonOption2;
     IBOutlet NSDatePicker* _datePicker;
     IBOutlet NSPathControl* _pathControl;
     IBOutlet NSSlider* _slider;
     IBOutlet NSLevelIndicator* _levelIndicator;
+    
+    //color selectors
+    IBOutlet NSButton* _buttonOption1;
+    IBOutlet NSButton* _buttonOption2;
+    IBOutlet NSTextField* _colorLabel;
 }
 
+- (IBAction)checkmarkWasPushed:(id)sender;
+
+- (IBAction)selectOneWasPushed:(id)sender;
 @end
