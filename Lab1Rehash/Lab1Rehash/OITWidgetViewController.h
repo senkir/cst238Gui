@@ -13,7 +13,14 @@
  */
 @interface OITWidgetViewController : NSViewController {
 @private
-    
+    IBOutlet NSButton* _button;
+    IBOutlet NSMatrix* _matrixButtons;
+    IBOutlet NSButton* _buttonOption1;
+    IBOutlet NSButton* _buttonOption2;
+    IBOutlet NSDatePicker* _datePicker;
+    IBOutlet NSPathControl* _pathControl;
+    IBOutlet NSSlider* _slider;
+    IBOutlet NSLevelIndicator* _levelIndicator;
 }
 
 @end

@@ -19,4 +19,7 @@ Documentation of Process:
 
 I had intended on using an Outline view for the left hand navigation, but building out the item hierarchy is proving to be difficult.  I may have to go with something simpler, such as a NSTableView or in the interest of time I may just use a series of buttons.  
 
-I had to restart the project because I didn't understand the way nibs are wired into the app delegate.  It seems that the delegate really wants there to be a main window and menu.  My efforts to remove them uncoupled something important.  I'm now going to pass a reference to the window to my custom window controller, so that my event handling is outside the app delegate. 
+I had to restart the project because I didn't understand the way nibs are wired into the app delegate.  It seems that the delegate really wants there to be a main window and menu. 
+My efforts to remove them uncoupled something important.  I'm now going to pass a reference to the window to my custom window controller, so that my event handling is outside the app delegate. 
+
+I finally rigged the buttons to work with the right callback to the window controller.  I'm going to set up a new view to deal with the widgets that live under each category.  
