@@ -17,7 +17,8 @@ Synthesis:
 
 Documentation of Process:
 
-I had intended on using an Outline view for the left hand navigation, but building out the item hierarchy is proving to be difficult.  I may have to go with something simpler, such as a NSTableView or in the interest of time I may just use a series of buttons.  
+I had intended on using an Outline view for the left hand navigation, but building out the item hierarchy is proving to be difficult.  I may have to go with something simpler, such as a
+ NSTableView or in the interest of time I may just use a series of buttons.  
 
 I had to restart the project because I didn't understand the way nibs are wired into the app delegate.  It seems that the delegate really wants there to be a main window and menu. 
 My efforts to remove them uncoupled something important.  I'm now going to pass a reference to the window to my custom window controller, so that my event handling is outside the app delegate. 
@@ -33,4 +34,14 @@ popup view needs to be wired into some kind of popup action
 
 i will need to figure out how tables work, since that is one of the sections.  The tree view has that list model that me trouble.  I'll have to work out a better way to build that. 
 
-The basic buttons got wired up without too much difficulty.  View sizing is looking like it's going to be a bit of a pain.  Apparently I need to write some logic to deal with that.  Perhaps make everything live inside a scroll view?  Anyway that's low priority, since the widgets themselves are the focus of this exercise.  
+The basic buttons got wired up without too much difficulty.  View sizing is looking like it's going to be a bit of a pain.  Apparently I need to write some logic to deal with that.
+Perhaps make everything live inside a scroll view?  Anyway that's low priority, since the widgets themselves are the focus of this exercise.  
+
+I went through a tutorial and managed to rig the table controller somewhat appropriately with a form and a modal popup.  Strangely, the positioning of the popup is wrong the first time it appears, and 
+thereafter works fine.  
+
+The tables seem to make sense more or less.  Apparently I can just bind the values to an array, which hadn't occured to me for some reason.  I was making it out to be more difficult by trying to implement item classes programatically.  
+
+I also figured out how to deal with text labels programatically.  I was having an issue where the labels didn't have a text property like they do in cocoa-touch.  Apparently regular Cocoa makes extensive use of NSControl properties to handle these attributes.  This means that I have to do things like call [object floatValue] or [object stringValue] to retrieve properties, and [object setStringValue:@"MyString"] to change settings.  
+
+Now that I know that it should be pretty nice, since I won't have to learn a new method for each object which implements this.  
