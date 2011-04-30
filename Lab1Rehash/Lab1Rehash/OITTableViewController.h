@@ -11,7 +11,7 @@
 
 @interface OITTableViewController : NSViewController {
 @private
-    
+    IBOutlet NSTableColumn* _table;
 }
 
 @end

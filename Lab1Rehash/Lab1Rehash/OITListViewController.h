@@ -13,7 +13,12 @@
  */
 @interface OITListViewController : NSViewController {
 @private
+    IBOutlet NSPopUpButton* _popupButton;
+    IBOutlet NSPathControl* _pathControl;
+    IBOutlet NSOutlineView* _outlineView;
+    IBOutlet NSTableColumn* _table;
     
 }
 
+- (IBAction)popupButtonWasSelected:(id)sender;
 @end

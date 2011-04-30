@@ -31,4 +31,6 @@ need to set a delegate for the NSTextField in the controller for that view.
 
 popup view needs to be wired into some kind of popup action
 
-i will need to figure out how tables work, since that is one of the sections.  The tree view has that list model that was giving me trouble.  I'll have to work out a better way to build that.  
+i will need to figure out how tables work, since that is one of the sections.  The tree view has that list model that me trouble.  I'll have to work out a better way to build that. 
+
+The basic buttons got wired up without too much difficulty.  View sizing is looking like it's going to be a bit of a pain.  Apparently I need to write some logic to deal with that.  Perhaps make everything live inside a scroll view?  Anyway that's low priority, since the widgets themselves are the focus of this exercise.  

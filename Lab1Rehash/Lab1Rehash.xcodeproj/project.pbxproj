@@ -95,8 +95,6 @@
 				4E892B0F13694CA10021CDF4 /* OITNavigationViewController.m */,
 				4E157641136A0E010057196E /* OITWidgetViewController.h */,
 				4E157642136A0E010057196E /* OITWidgetViewController.m */,
-				4E157663136A7CD40057196E /* OITPanelViewController.h */,
-				4E157664136A7CD50057196E /* OITPanelViewController.m */,
 				4E15764E136A587E0057196E /* OITListViewController.h */,
 				4E15764F136A587E0057196E /* OITListViewController.m */,
 				4E157654136A7A340057196E /* OITTextViewController.h */,
@@ -105,6 +103,8 @@
 				4E15765A136A7B930057196E /* OITPopupViewController.m */,
 				4E15765E136A7BEE0057196E /* OITTableViewController.h */,
 				4E15765F136A7BEE0057196E /* OITTableViewController.m */,
+				4E157663136A7CD40057196E /* OITPanelViewController.h */,
+				4E157664136A7CD50057196E /* OITPanelViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

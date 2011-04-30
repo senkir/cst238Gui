@@ -26,4 +26,9 @@
     [super dealloc];
 }
 
+#pragma mark OITListViewController
+- (IBAction)popupButtonWasSelected:(id)sender {
+    NSLog(@"OITListViewController: popup list button was selected");
+}
+
 @end

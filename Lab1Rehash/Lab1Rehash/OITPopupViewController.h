@@ -11,7 +11,7 @@
 
 @interface OITPopupViewController : NSViewController {
 @private
-    
+    IBOutlet NSButton* _button;
 }
 
 @end

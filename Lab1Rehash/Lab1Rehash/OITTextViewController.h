@@ -11,7 +11,9 @@
 
 @interface OITTextViewController : NSViewController {
 @private
-    
+    IBOutlet NSScrollView* _scrollView;
+    IBOutlet NSTextField* _textField;
+    IBOutlet NSSecureTextField* _secureText;
 }
 
 @end

@@ -11,7 +11,7 @@
 
 @interface OITPanelViewController : NSViewController {
 @private
-    
+    NSButton* _twistyButton;
 }
 
 @end
