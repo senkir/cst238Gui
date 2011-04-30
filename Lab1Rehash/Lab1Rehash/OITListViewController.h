@@ -17,8 +17,11 @@
     IBOutlet NSPathControl* _pathControl;
     IBOutlet NSOutlineView* _outlineView;
     IBOutlet NSTableColumn* _table;
+    IBOutlet NSTextField*   _popupLabel;
     
 }
 
 - (IBAction)popupButtonWasSelected:(id)sender;
+
+- (IBAction)pathControlWasSelected:(id)sender;
 @end

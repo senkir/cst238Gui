@@ -15,12 +15,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        //fill in the button contents
-        [_popupButton removeAllItems];
-        OITPopupItemModel* model = [[OITPopupItemModel alloc] init];
-        for (NSString* item in model.items) {
-            [_popupButton addItemWithTitle:item];
-        }
+        //initialize
     }
     
     return self;
@@ -31,9 +26,29 @@
     [super dealloc];
 }
 
+
+- (void)loadView {
+    [super loadView];
+    NSLog(@"Load View");
+    //fill in the button contents
+    [_popupButton removeAllItems];
+    OITPopupItemModel* model = [[OITPopupItemModel alloc] init];
+    for (NSString* item in model.items) {
+        [_popupButton addItemWithTitle:item];
+    }
+    [model release];
+    
+    [_popupLabel setStringValue:@"Ham and Eggs"];
+}
+
 #pragma mark OITListViewController
 - (IBAction)popupButtonWasSelected:(id)sender {
-    NSLog(@"OITListViewController: popup list button was selected");
+    NSLog(@"OITListViewController: popup list button %@was selected", [_popupButton stringValue]);
+}
+
+- (IBAction)pathControlWasSelected:(id)sender {
+    NSLog(@"OITListViewController: path control did something");
+    NSLog(@"%@",[_pathControl clickedPathComponentCell]);
 }
 
 @end
