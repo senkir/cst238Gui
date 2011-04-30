@@ -8,10 +8,19 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class OITTableViewController;
 
-@interface OITPopupViewController : NSViewController {
+@interface OITPopupViewController : NSWindowController {
 @private
-    IBOutlet NSButton* _button;
+    BOOL                    _canceled;
+    NSMutableDictionary*    _savedFields;
+    IBOutlet NSForm*        _form;
 }
+
+- (NSMutableDictionary*) newObjectFor:(OITTableViewController*)sender;
+- (BOOL)wasCanceled;
+
+- (IBAction)done:(id)sender;
+- (IBAction)cancel:(id)sender;
 
 @end

@@ -45,7 +45,7 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">268</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="NSTextField" id="303584327">
+					<object class="NSTextField" id="855860613">
 						<reference key="NSNextResponder" ref="1005"/>
 						<int key="NSvFlags">268</int>
 						<string key="NSFrame">{{130, 344}, {89, 17}}</string>
@@ -53,7 +53,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="494911597"/>
 						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="413069676">
+						<object class="NSTextFieldCell" key="NSCell" id="134435973">
 							<int key="NSCellFlags">68288064</int>
 							<int key="NSCellFlags2">272630784</int>
 							<string key="NSContents">Popup Menu</string>
@@ -62,8 +62,8 @@
 								<double key="NSSize">13</double>
 								<int key="NSfFlags">1044</int>
 							</object>
-							<reference key="NSControlView" ref="303584327"/>
-							<object class="NSColor" key="NSBackgroundColor" id="404717566">
+							<reference key="NSControlView" ref="855860613"/>
+							<object class="NSColor" key="NSBackgroundColor" id="166853644">
 								<int key="NSColorSpace">6</int>
 								<string key="NSCatalogName">System</string>
 								<string key="NSColorName">controlColor</string>
@@ -147,7 +147,7 @@
 													<string key="NSContents">Text</string>
 													<reference key="NSSupport" ref="71228872"/>
 													<reference key="NSControlView" ref="1000807960"/>
-													<reference key="NSBackgroundColor" ref="404717566"/>
+													<reference key="NSBackgroundColor" ref="166853644"/>
 													<reference key="NSTextColor" ref="120957820"/>
 												</object>
 												<int key="NSResizingMask">3</int>
@@ -253,7 +253,7 @@
 							<string>Apple URL pasteboard type</string>
 							<string>NSFilenamesPboardType</string>
 						</set>
-						<string key="NSFrame">{{19, 302}, {179, 20}}</string>
+						<string key="NSFrame">{{19, 302}, {235, 20}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="9542029"/>
@@ -310,7 +310,7 @@
 						<string key="NSFrame">{{17, 337}, {100, 26}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="303584327"/>
+						<reference key="NSNextKeyView" ref="855860613"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSPopUpButtonCell" key="NSCell" id="7139373">
 							<int key="NSCellFlags">-2076049856</int>
@@ -378,7 +378,7 @@
 						</object>
 					</object>
 				</array>
-				<string key="NSFrameSize">{231, 381}</string>
+				<string key="NSFrameSize">{276, 381}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="632410180"/>
@@ -439,7 +439,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">_popupLabel</string>
 						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="303584327"/>
+						<reference key="destination" ref="855860613"/>
 					</object>
 					<int key="connectionID">52</int>
 				</object>
@@ -485,7 +485,7 @@
 							<reference ref="632410180"/>
 							<reference ref="494911597"/>
 							<reference ref="9542029"/>
-							<reference ref="303584327"/>
+							<reference ref="855860613"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -592,16 +592,16 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">50</int>
-						<reference key="object" ref="303584327"/>
+						<reference key="object" ref="855860613"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="413069676"/>
+							<reference ref="134435973"/>
 						</array>
 						<reference key="parent" ref="1005"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">51</int>
-						<reference key="object" ref="413069676"/>
-						<reference key="parent" ref="303584327"/>
+						<reference key="object" ref="134435973"/>
+						<reference key="parent" ref="855860613"/>
 					</object>
 				</array>
 			</object>

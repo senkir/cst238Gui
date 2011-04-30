@@ -31,6 +31,8 @@
 		4E892B0713694B560021CDF4 /* OITMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0613694B560021CDF4 /* OITMainWindowController.m */; };
 		4E892B1413694CA10021CDF4 /* OITNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0F13694CA10021CDF4 /* OITNavigationViewController.m */; };
 		4E95505F136BCABF0029556B /* OITPopupItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E95505E136BCABF0029556B /* OITPopupItemModel.m */; };
+		4E95506A136BE8240029556B /* OITMenuSampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E955069136BE8240029556B /* OITMenuSampleModel.m */; };
+		4E955074136BEBCF0029556B /* AddProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E955073136BEBCF0029556B /* AddProductView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,9 @@
 		4E892B1013694CA10021CDF4 /* OITNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITNavigationViewController.h; sourceTree = "<group>"; };
 		4E95505D136BCABF0029556B /* OITPopupItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITPopupItemModel.h; sourceTree = "<group>"; };
 		4E95505E136BCABF0029556B /* OITPopupItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITPopupItemModel.m; sourceTree = "<group>"; };
+		4E955068136BE8240029556B /* OITMenuSampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITMenuSampleModel.h; sourceTree = "<group>"; };
+		4E955069136BE8240029556B /* OITMenuSampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITMenuSampleModel.m; sourceTree = "<group>"; };
+		4E955073136BEBCF0029556B /* AddProductView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddProductView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,8 @@
 				4E15763F136A0D370057196E /* MasterConstants.m */,
 				4E95505D136BCABF0029556B /* OITPopupItemModel.h */,
 				4E95505E136BCABF0029556B /* OITPopupItemModel.m */,
+				4E955068136BE8240029556B /* OITMenuSampleModel.h */,
+				4E955069136BE8240029556B /* OITMenuSampleModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 				4E15765B136A7B930057196E /* OITPopupViewController.xib */,
 				4E157660136A7BEE0057196E /* OITTableViewController.xib */,
 				4E157665136A7CD50057196E /* OITPanelViewController.xib */,
+				4E955073136BEBCF0029556B /* AddProductView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -261,6 +269,7 @@
 				4E15765D136A7B940057196E /* OITPopupViewController.xib in Resources */,
 				4E157662136A7BEF0057196E /* OITTableViewController.xib in Resources */,
 				4E157667136A7CD60057196E /* OITPanelViewController.xib in Resources */,
+				4E955074136BEBCF0029556B /* AddProductView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +292,7 @@
 				4E157661136A7BEF0057196E /* OITTableViewController.m in Sources */,
 				4E157666136A7CD60057196E /* OITPanelViewController.m in Sources */,
 				4E95505F136BCABF0029556B /* OITPopupItemModel.m in Sources */,
+				4E95506A136BE8240029556B /* OITMenuSampleModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

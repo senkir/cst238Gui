@@ -39,6 +39,7 @@
     [model release];
     
     [_popupLabel setStringValue:@"Ham and Eggs"];
+    
 }
 
 #pragma mark OITListViewController
