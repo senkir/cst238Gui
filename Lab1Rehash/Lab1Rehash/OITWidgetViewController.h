@@ -11,22 +11,30 @@
 /**
  Various butten widgets and a date picker are included here
  */
-@interface OITWidgetViewController : NSViewController {
+@interface OITWidgetViewController : NSViewController{
 @private
-    IBOutlet NSButton* _button;
-    IBOutlet NSMatrix* _matrixButtons;
-    IBOutlet NSDatePicker* _datePicker;
-    IBOutlet NSPathControl* _pathControl;
-    IBOutlet NSSlider* _slider;
+    IBOutlet NSButton*          _button;
+    IBOutlet NSMatrix*          _matrixButtons;
+    IBOutlet NSDatePicker*      _datePicker;
+    
+    IBOutlet NSSlider*          _slider;
+    IBOutlet NSTextField*       _sliderLabel;
+    
     IBOutlet NSLevelIndicator* _levelIndicator;
     
     //color selectors
-    IBOutlet NSButton* _buttonOption1;
-    IBOutlet NSButton* _buttonOption2;
-    IBOutlet NSTextField* _colorLabel;
+    IBOutlet NSButton*          _buttonOption1;
+    IBOutlet NSButton*          _buttonOption2;
+    IBOutlet NSTextField*       _colorLabel;
 }
 
 - (IBAction)checkmarkWasPushed:(id)sender;
 
 - (IBAction)selectOneWasPushed:(id)sender;
+
+- (IBAction)doNothingButtonPushed:(id)sender;
+
+- (IBAction)sliderDidChange:(id)sender;
+
+- (IBAction)datePickerDidChange:(id)sender;
 @end

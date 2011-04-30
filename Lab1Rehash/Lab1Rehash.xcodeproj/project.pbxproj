@@ -30,6 +30,7 @@
 		4E892AF7136949310021CDF4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E892AF5136949310021CDF4 /* MainMenu.xib */; };
 		4E892B0713694B560021CDF4 /* OITMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0613694B560021CDF4 /* OITMainWindowController.m */; };
 		4E892B1413694CA10021CDF4 /* OITNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B0F13694CA10021CDF4 /* OITNavigationViewController.m */; };
+		4E95505F136BCABF0029556B /* OITPopupItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E95505E136BCABF0029556B /* OITPopupItemModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,8 @@
 		4E892B0613694B560021CDF4 /* OITMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITMainWindowController.m; sourceTree = "<group>"; };
 		4E892B0F13694CA10021CDF4 /* OITNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITNavigationViewController.m; sourceTree = "<group>"; };
 		4E892B1013694CA10021CDF4 /* OITNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITNavigationViewController.h; sourceTree = "<group>"; };
+		4E95505D136BCABF0029556B /* OITPopupItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITPopupItemModel.h; sourceTree = "<group>"; };
+		4E95505E136BCABF0029556B /* OITPopupItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITPopupItemModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 			children = (
 				4E15763E136A0D370057196E /* MasterConstants.h */,
 				4E15763F136A0D370057196E /* MasterConstants.m */,
+				4E95505D136BCABF0029556B /* OITPopupItemModel.h */,
+				4E95505E136BCABF0029556B /* OITPopupItemModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				4E15765C136A7B940057196E /* OITPopupViewController.m in Sources */,
 				4E157661136A7BEF0057196E /* OITTableViewController.m in Sources */,
 				4E157666136A7CD60057196E /* OITPanelViewController.m in Sources */,
+				4E95505F136BCABF0029556B /* OITPopupItemModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

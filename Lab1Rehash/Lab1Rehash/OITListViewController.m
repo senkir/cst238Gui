@@ -7,7 +7,7 @@
 //
 
 #import "OITListViewController.h"
-
+#import "OITPopupItemModel.h"
 
 @implementation OITListViewController
 
@@ -15,7 +15,12 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Initialization code here.
+        //fill in the button contents
+        [_popupButton removeAllItems];
+        OITPopupItemModel* model = [[OITPopupItemModel alloc] init];
+        for (NSString* item in model.items) {
+            [_popupButton addItemWithTitle:item];
+        }
     }
     
     return self;
