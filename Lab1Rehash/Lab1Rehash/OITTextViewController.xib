@@ -11,11 +11,11 @@
 			<string key="NS.object.0">1306</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
+			<string>NSSecureTextFieldCell</string>
 			<string>NSTextField</string>
-			<string>NSTextFieldCell</string>
 			<string>NSScrollView</string>
 			<string>NSSecureTextField</string>
-			<string>NSSecureTextFieldCell</string>
+			<string>NSTextFieldCell</string>
 			<string>NSCustomView</string>
 			<string>NSTextView</string>
 			<string>NSScroller</string>
@@ -91,7 +91,7 @@
 							<reference key="NSSupport" ref="147717910"/>
 							<reference key="NSControlView" ref="393595946"/>
 							<bool key="NSDrawsBackground">YES</bool>
-							<object class="NSColor" key="NSBackgroundColor" id="384800719">
+							<object class="NSColor" key="NSBackgroundColor">
 								<int key="NSColorSpace">6</int>
 								<string key="NSCatalogName">System</string>
 								<string key="NSColorName">textBackgroundColor</string>
@@ -100,7 +100,7 @@
 									<bytes key="NSWhite">MQA</bytes>
 								</object>
 							</object>
-							<object class="NSColor" key="NSTextColor" id="751568364">
+							<object class="NSColor" key="NSTextColor">
 								<int key="NSColorSpace">6</int>
 								<string key="NSCatalogName">System</string>
 								<string key="NSColorName">textColor</string>
@@ -109,25 +109,6 @@
 							<array key="NSAllowedInputLocales">
 								<string>NSAllRomanInputSourcesLocaleIdentifier</string>
 							</array>
-						</object>
-					</object>
-					<object class="NSTextField" id="678266215">
-						<reference key="NSNextResponder" ref="1005"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{20, 44}, {224, 113}}</string>
-						<reference key="NSSuperview" ref="1005"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="393595946"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="400062341">
-							<int key="NSCellFlags">-1805517311</int>
-							<int key="NSCellFlags2">272629760</int>
-							<string key="NSContents"/>
-							<reference key="NSSupport" ref="147717910"/>
-							<reference key="NSControlView" ref="678266215"/>
-							<bool key="NSDrawsBackground">YES</bool>
-							<reference key="NSBackgroundColor" ref="384800719"/>
-							<reference key="NSTextColor" ref="751568364"/>
 						</object>
 					</object>
 					<object class="NSScrollView" id="533396503">
@@ -301,14 +282,6 @@
 					</object>
 					<int key="connectionID">19</int>
 				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_textField</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="678266215"/>
-					</object>
-					<int key="connectionID">20</int>
-				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -341,7 +314,6 @@
 						<reference key="object" ref="1005"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="533396503"/>
-							<reference ref="678266215"/>
 							<reference ref="393595946"/>
 							<reference ref="456556167"/>
 						</array>
@@ -371,19 +343,6 @@
 						<int key="objectID">7</int>
 						<reference key="object" ref="462869621"/>
 						<reference key="parent" ref="533396503"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">10</int>
-						<reference key="object" ref="678266215"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="400062341"/>
-						</array>
-						<reference key="parent" ref="1005"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">11</int>
-						<reference key="object" ref="400062341"/>
-						<reference key="parent" ref="678266215"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">14</int>
@@ -421,8 +380,6 @@
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="1.WindowOrigin">{628, 654}</string>
 				<string key="1.editorWindowContentRectSynchronizationRect">{{357, 416}, {480, 272}}</string>
-				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="16.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>

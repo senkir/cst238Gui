@@ -14,7 +14,7 @@
 #import "OITTextViewController.h"
 #import "OITPopupViewController.h"
 #import "OITTableViewController.h"
-#import "OITPanelViewController.h"
+#import "OITThreadViewController.h"
 
 #import "MasterConstants.h"
 
@@ -102,7 +102,7 @@
             break;
         case kButtonPanelsTag:
             NSLog(@"%@ %@ button", logString, @"Panels");
-            toReturn = [[OITPanelViewController alloc] initWithNibName:@"OITPanelViewController" bundle:nil];
+            toReturn = [[OITThreadViewController alloc] initWithNibName:@"OITPanelViewController" bundle:nil];
             break;
         case kButtonListsTag:
             NSLog(@"%@ %@ button", logString, @"Lists");

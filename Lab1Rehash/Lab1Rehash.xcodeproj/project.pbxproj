@@ -20,8 +20,8 @@
 		4E15765D136A7B940057196E /* OITPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E15765B136A7B930057196E /* OITPopupViewController.xib */; };
 		4E157661136A7BEF0057196E /* OITTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E15765F136A7BEE0057196E /* OITTableViewController.m */; };
 		4E157662136A7BEF0057196E /* OITTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E157660136A7BEE0057196E /* OITTableViewController.xib */; };
-		4E157666136A7CD60057196E /* OITPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E157664136A7CD50057196E /* OITPanelViewController.m */; };
-		4E157667136A7CD60057196E /* OITPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E157665136A7CD50057196E /* OITPanelViewController.xib */; };
+		4E157666136A7CD60057196E /* OITThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E157664136A7CD50057196E /* OITThreadViewController.m */; };
+		4E157667136A7CD60057196E /* OITThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E157665136A7CD50057196E /* OITThreadViewController.xib */; };
 		4E892AE1136949300021CDF4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E892AE0136949300021CDF4 /* Cocoa.framework */; };
 		4E892AEB136949300021CDF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E892AE9136949300021CDF4 /* InfoPlist.strings */; };
 		4E892AEE136949310021CDF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E892AED136949310021CDF4 /* main.m */; };
@@ -55,9 +55,9 @@
 		4E15765E136A7BEE0057196E /* OITTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITTableViewController.h; sourceTree = "<group>"; };
 		4E15765F136A7BEE0057196E /* OITTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITTableViewController.m; sourceTree = "<group>"; };
 		4E157660136A7BEE0057196E /* OITTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OITTableViewController.xib; sourceTree = "<group>"; };
-		4E157663136A7CD40057196E /* OITPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OITPanelViewController.h; sourceTree = "<group>"; };
-		4E157664136A7CD50057196E /* OITPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITPanelViewController.m; sourceTree = "<group>"; };
-		4E157665136A7CD50057196E /* OITPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OITPanelViewController.xib; sourceTree = "<group>"; };
+		4E157663136A7CD40057196E /* OITThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = OITThreadViewController.h; sourceTree = "<group>"; };
+		4E157664136A7CD50057196E /* OITThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OITThreadViewController.m; sourceTree = "<group>"; };
+		4E157665136A7CD50057196E /* OITThreadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OITThreadViewController.xib; sourceTree = "<group>"; };
 		4E892ADC136949300021CDF4 /* Lab1Rehash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab1Rehash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E892AE0136949300021CDF4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4E892AE3136949300021CDF4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -111,8 +111,8 @@
 				4E15765A136A7B930057196E /* OITPopupViewController.m */,
 				4E15765E136A7BEE0057196E /* OITTableViewController.h */,
 				4E15765F136A7BEE0057196E /* OITTableViewController.m */,
-				4E157663136A7CD40057196E /* OITPanelViewController.h */,
-				4E157664136A7CD50057196E /* OITPanelViewController.m */,
+				4E157663136A7CD40057196E /* OITThreadViewController.h */,
+				4E157664136A7CD50057196E /* OITThreadViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 				4E157656136A7A340057196E /* OITTextViewController.xib */,
 				4E15765B136A7B930057196E /* OITPopupViewController.xib */,
 				4E157660136A7BEE0057196E /* OITTableViewController.xib */,
-				4E157665136A7CD50057196E /* OITPanelViewController.xib */,
+				4E157665136A7CD50057196E /* OITThreadViewController.xib */,
 				4E955073136BEBCF0029556B /* AddProductView.xib */,
 			);
 			name = View;
@@ -268,7 +268,7 @@
 				4E157658136A7A340057196E /* OITTextViewController.xib in Resources */,
 				4E15765D136A7B940057196E /* OITPopupViewController.xib in Resources */,
 				4E157662136A7BEF0057196E /* OITTableViewController.xib in Resources */,
-				4E157667136A7CD60057196E /* OITPanelViewController.xib in Resources */,
+				4E157667136A7CD60057196E /* OITThreadViewController.xib in Resources */,
 				4E955074136BEBCF0029556B /* AddProductView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +290,7 @@
 				4E157657136A7A340057196E /* OITTextViewController.m in Sources */,
 				4E15765C136A7B940057196E /* OITPopupViewController.m in Sources */,
 				4E157661136A7BEF0057196E /* OITTableViewController.m in Sources */,
-				4E157666136A7CD60057196E /* OITPanelViewController.m in Sources */,
+				4E157666136A7CD60057196E /* OITThreadViewController.m in Sources */,
 				4E95505F136BCABF0029556B /* OITPopupItemModel.m in Sources */,
 				4E95506A136BE8240029556B /* OITMenuSampleModel.m in Sources */,
 			);

@@ -9,9 +9,12 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface OITPanelViewController : NSViewController {
+@interface OITThreadViewController : NSViewController {
 @private
-    NSButton* _twistyButton;
+    IBOutlet NSButton* _button;
+    IBOutlet NSProgressIndicator* _progressIndicator;
+    
 }
 
+- (IBAction)buttonWasSelected:(id)sender;
 @end

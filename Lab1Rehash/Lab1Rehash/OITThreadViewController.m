@@ -6,10 +6,10 @@
 //  Copyright 2011 SpiderMuffinArt. All rights reserved.
 //
 
-#import "OITPanelViewController.h"
+#import "OITThreadViewController.h"
 
 
-@implementation OITPanelViewController
+@implementation OITThreadViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,4 +26,9 @@
     [super dealloc];
 }
 
+
+- (IBAction)buttonWasSelected:(id)sender {
+    NSLog(@"OITThreadViewController: button Was selected");
+    
+}
 @end
