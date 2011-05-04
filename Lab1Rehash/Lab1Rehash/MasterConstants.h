@@ -12,7 +12,7 @@
 #define kButtonListsTag     51
 #define kButtonTextTag      52
 #define kButtonPopupsTag    53
-#define kButtonPanelsTag    54
+#define kButtonThreadTag    54
 #define kButtonTablesTag    55
 
 @interface MasterConstants : NSObject {

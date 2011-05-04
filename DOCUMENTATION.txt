@@ -8,12 +8,7 @@ While I am pretty familiar with the Objective-C / Cocoa-Touch api, Cocoa is some
 I hope that classes such as NSView are similar enough to UIView that I will not have too much difficulty with the implementation.  
 
 Analysis:
-I plan to build using a split view
-
-Architecture:
-
-
-Synthesis:
+I plan to build using a split view where the navigation on the left hand side will control the contents on the right hand side.  This will illustrate the ability to swap out controllers at will when using View based applications.  I will use some model objects to illustrate the separation of concerns related to data storage.  I won't do anything so complex as a database, but i will put together some dummy data that one or two of the controllers can pull from.  
 
 Documentation of Process:
 
@@ -45,3 +40,9 @@ The tables seem to make sense more or less.  Apparently I can just bind the valu
 I also figured out how to deal with text labels programatically.  I was having an issue where the labels didn't have a text property like they do in cocoa-touch.  Apparently regular Cocoa makes extensive use of NSControl properties to handle these attributes.  This means that I have to do things like call [object floatValue] or [object stringValue] to retrieve properties, and [object setStringValue:@"MyString"] to change settings.  
 
 Now that I know that it should be pretty nice, since I won't have to learn a new method for each object which implements this.  
+
+I'm stripping out some of the widgets that have similar interfaces in favor of dedicating one controller to a threading example.  I think it will be more useful this way. 
+
+Replaced the panel interface with the threading example i had planned.  Using grand central dispatch made this a lot more straightforward.  I just had to learn which C calles were used to call the global queues for the application.   
+
+The subviews in my main window have some sizing issues, but fixing them is going to have to be out of scope for this Lab.  

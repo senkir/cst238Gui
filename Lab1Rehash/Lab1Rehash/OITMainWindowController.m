@@ -100,9 +100,9 @@
             NSLog(@"%@ %@ button", logString, @"Tables");
             toReturn = [[OITTableViewController alloc] initWithNibName:@"OITTableViewController" bundle:nil];
             break;
-        case kButtonPanelsTag:
-            NSLog(@"%@ %@ button", logString, @"Panels");
-            toReturn = [[OITThreadViewController alloc] initWithNibName:@"OITPanelViewController" bundle:nil];
+        case kButtonThreadTag:
+            NSLog(@"%@ %@ button", logString, @"Thread");
+            toReturn = [[OITThreadViewController alloc] initWithNibName:@"OITThreadViewController" bundle:nil];
             break;
         case kButtonListsTag:
             NSLog(@"%@ %@ button", logString, @"Lists");

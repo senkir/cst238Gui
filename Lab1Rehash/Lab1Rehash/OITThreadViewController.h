@@ -13,8 +13,10 @@
 @private
     IBOutlet NSButton* _button;
     IBOutlet NSProgressIndicator* _progressIndicator;
-    
+    IBOutlet NSTextField* _resultField;
+    NSOperationQueue* _queue;
+    NSInteger* _resultValue;
 }
-
+- (NSOperationQueue*)queue;
 - (IBAction)buttonWasSelected:(id)sender;
 @end
