@@ -7,6 +7,12 @@ Discovery:
 While I am pretty familiar with the Objective-C / Cocoa-Touch api, Cocoa is somewhat different.  For one, I do not have use of any of the UI-classes, and am limited to the NS-based methods.
 I hope that classes such as NSView are similar enough to UIView that I will not have too much difficulty with the implementation.  
 
+With Regards to the specific design patterns we were to search for in Cocoa, I am familiar with them at this point.  The NSNotificationCenter is where an object can register to be an observer.  From here, observed objects can post notifications about changes.  
+
+All Views are composites of each other.  They can be accessed through use of the [view subviews] method, or individually through use of an id attribute with [view subviewWithId:].  
+
+Command is most directly related to the use of Protocols.  If an object uses the syntac  MyObject : NSObject < ProtocolToImplement > , then they are promising to implement certain methods.  This then allows a second object to make use of these expected methods.  This can be seen in the NSTextField class, where an object can adhere to the NSTextFieldDelegate protocol, and receive notifications about changes to that specific object.
+
 Analysis:
 I plan to build using a split view where the navigation on the left hand side will control the contents on the right hand side.  This will illustrate the ability to swap out controllers at will when using View based applications.  I will use some model objects to illustrate the separation of concerns related to data storage.  I won't do anything so complex as a database, but i will put together some dummy data that one or two of the controllers can pull from.  
 

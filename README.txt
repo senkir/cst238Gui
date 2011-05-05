@@ -12,3 +12,7 @@ Directions:
 
 Open Lab1Rehash.xcodeproj in Xcode to run Lab1.  
 DOCUMENTATION.txt will contain writeup information regarding the process of building the project.
+
+This repository is available on Github via https://github.com/senkir/cst238Gui
+
+NOTE:  the final version of the project is in the 'rehash' branch.

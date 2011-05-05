@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface OITThreadViewController : NSViewController {
+@interface OITThreadViewController : NSViewController{
 @private
     IBOutlet NSButton* _button;
     IBOutlet NSProgressIndicator* _progressIndicator;

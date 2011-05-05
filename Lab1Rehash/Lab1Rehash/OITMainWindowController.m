@@ -125,5 +125,7 @@
         [_splitView replaceSubview:[_rightController view] with:[controller view]];
         _rightController = controller;
     }
+    
+    
 }
 @end

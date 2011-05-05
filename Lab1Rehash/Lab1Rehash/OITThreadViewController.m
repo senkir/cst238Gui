@@ -22,12 +22,10 @@
     if (self) {
         // Initialization code here.
     }
-    
     return self;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [super dealloc];
 }
 
@@ -56,6 +54,7 @@
             [self threadDidFinish];
         });
     });
+    
 }
 
 - (void)threadDidFinish {
